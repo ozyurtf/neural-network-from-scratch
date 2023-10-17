@@ -42,8 +42,6 @@ $\frac{\partial s_1}{\partial W_1}$<br>
 
 $\frac{\partial s_1}{\partial b_1}$<br>
 
-$\frac{\partial s_2}{\partial W_2}$<br>
-
 $\delta_1 = \frac{\partial C}{\partial \widetilde{y}}\frac{\partial \widetilde{y}}{s_2}$<br>
 
 $\delta_2 = \frac{\partial C}{\partial \widetilde{y}}\frac{\partial \widetilde{y}}{s_2}\frac{\partial s_2}{\partial a_1}\frac{\partial a_1}{\partial s_1} = \delta_1W_2\frac{\partial a_1}{\partial s_1}$<br>
