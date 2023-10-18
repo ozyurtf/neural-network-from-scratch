@@ -1,4 +1,4 @@
-## Binary Cross Entropy Equations
+## Neural Network 
 
 <details>
 <summary>Forward Propagation</summary>
