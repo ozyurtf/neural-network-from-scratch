@@ -32,13 +32,13 @@ $\frac{\partial \widetilde{y}}{\partial a_2}$<br>
 
 $\frac{\partial a_2}{\partial s_2}$<br>
 
-$\frac{\partial s_2}{\partial W_2}$<br>
+$\frac{\partial s_2}{\partial W_2} = a_1^T$<br>
 
 $\frac{\partial s_2}{\partial a_1}$<br>
 
 $\frac{\partial a_2}{\partial s_1}$<br>
 
-$\frac{\partial s_1}{\partial W_1}$<br>
+$\frac{\partial s_1}{\partial W_1} = a_0^T$<br>
 
 $\frac{\partial s_1}{\partial b_1}$<br>
 
