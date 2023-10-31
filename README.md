@@ -15,26 +15,26 @@ $a_2 = g_2(s_2)$<br>
 
 $\widetilde{y} = a_2$<br>
 
-$g_i(x) = \tanh(x) = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}}$<br>
+$g_i(s_i) = \tanh(s_i) = \frac{e^{s_i} - e^{-s_i}}{e^{s_i} + e^{-s_i}}$<br>
 
-$g_i(x) = \sigma(x) = \frac{1}{1 + e^{-x}}$<br>
+$g_i(s_i) = \sigma(s_i) = \frac{1}{1 + e^{-s_i}}$<br>
 
-$g_i(x) = ReLU(x) = max(0, x)$<br>
+$g_i(s_i) = ReLU(s_i) = max(0, s_i)$<br>
 
-$g_i(x) = Identity(x) = x$<br>
+$g_i(s_i) = Identity(s_i) = s_i$<br>
 
 </details>
 
 <details>
 <summary>Gradients</summary><br>
 
-$\frac{\partial g_i(x)}{\partial x}  = \frac{\partial tanh(x)}{\partial x} = 1 - \tanh^2(x)$<br>
+$\frac{\partial g_i(s_i)}{\partial s_i}  = \frac{\partial tanh(s_i)}{\partial s_i} = 1 - \tanh^2(s_i)$<br>
 
-$\frac{\partial g_i(x)}{\partial x}  = \frac{\partial \sigma(x)}{\partial x} = \sigma(x) \cdot (1 - \sigma(x))$<br>
+$\frac{\partial g_i(x)}{\partial s_i}  = \frac{\partial \sigma(s_i)}{\partial s_i} = \sigma(s_i) \cdot (1 - \sigma(s_i))$<br>
 
-$\frac{\partial g_i(x)}{\partial x}  = \frac{\partial ReLU(x)}{\partial x} = M$<br> 
+$\frac{\partial g_i(x)}{\partial s_i}  = \frac{\partial ReLU(s_i)}{\partial s_i} = M$<br> 
 
-$\frac{\partial g_i(x)}{\partial x} = \frac{\partial Identity(x)}{\partial x} = I$<br>
+$\frac{\partial g_i(x)}{\partial s_i} = \frac{\partial Identity(s_i)}{\partial s_i} = I$<br>
         
 $\frac{\partial \widetilde{y}}{\partial a_2} = I$<br>
 
