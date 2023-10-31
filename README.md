@@ -32,7 +32,7 @@ $\frac{\partial g_i(x)}{\partial x}  = \frac{\partial tanh(x)}{\partial x} = 1 -
 
 $\frac{\partial g_i(x)}{\partial x}  = \frac{\partial \sigma(x)}{\partial x} = \sigma(x) \cdot (1 - \sigma(x))$<br>
 
-$\frac{\partial g_i(x)}{\partial x}  = \frac{\partial ReLU(x)}{\partial x} = 1$ if $x > 0$ else $0$<br>
+$\frac{\partial g_i(x)}{\partial x}  = \frac{\partial ReLU(x)}{\partial x} = I$ if $x > 0$ else $O$<br>
 
 $\frac{\partial g_i(x)}{\partial x} = \frac{\partial Identity(x)}{\partial x} = I$<br>
         
