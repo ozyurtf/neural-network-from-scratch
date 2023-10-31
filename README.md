@@ -32,7 +32,7 @@ $\frac{\partial g_i(x)}{\partial x}  = \frac{\partial tanh(x)}{\partial x} = 1 -
 
 $\frac{\partial g_i(x)}{\partial x}  = \frac{\partial \sigma(x)}{\partial x} = \sigma(x) \cdot (1 - \sigma(x))$<br>
 
-$\frac{\partial g_i(x)}{\partial x}  = \frac{\partial ReLU(x)}{\partial x} = I$ if $x > 0$ else $O$<br>
+$\frac{\partial g_i(x)}{\partial x}  = \frac{\partial ReLU(x)}{\partial x} = M$<br> 
 
 $\frac{\partial g_i(x)}{\partial x} = \frac{\partial Identity(x)}{\partial x} = I$<br>
         
@@ -53,6 +53,9 @@ $\frac{\partial s_1}{\partial W_1} = a_0^T$<br>
 $\frac{\partial s_1}{\partial a_0} = W_1^T$<br>
 
 $\frac{\partial s_1}{\partial b_1} = I$<br>
+
+$M_{ij} = 0$, $M_{ii} = 1 \text{ if } x_i > 0$, $M_{ii} = 0 \text{ if } x_i \leq 0$<br><br>
+$I_{ij} = 0$, $I_{ii} = 1$
 
 </details>
 
