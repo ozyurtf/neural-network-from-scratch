@@ -54,8 +54,8 @@ $\frac{\partial s_1}{\partial a_0} = W_1^T$<br>
 
 $\frac{\partial s_1}{\partial b_1} = I$<br>
 
-$M_{ij} = 0$, $M_{ii} = 1 \text{ if } x_i > 0$, $M_{ii} = 0 \text{ if } x_i \leq 0$<br><br>
-$I_{ij} = 0$, $I_{ii} = 1$
+$M_{kj} = 0$, $M_{kk} = 1 \text{ if } s_{i_k} > 0$, $M_{kk} = 0 \text{ if } s_{i_k} \leq 0$<br><br>
+$I_{kj} = 0$, $I_{kk} = 1$
 
 </details>
 
