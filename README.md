@@ -40,7 +40,7 @@ $\frac{\partial \widetilde{y}}{\partial a_2} = I_2$<br>
 
 $\frac{\partial a_2}{\partial s_2} = \frac{\partial g_2(s_2)}{\partial s_2}$<br>
 
-$\frac{\partial s_2}{\partial W_2} = a_1^T$<br>
+$\frac{\partial s_2}{\partial W_2} = a_1^T = g_1(s_1)^T$<br>
 
 $\frac{\partial s_2}{\partial b_2} = I_3$<br>
 
@@ -48,7 +48,7 @@ $\frac{\partial s_2}{\partial a_1} = W_2^T$<br>
 
 $\frac{\partial a_1}{\partial s_1} = \frac{\partial g_1(s_1)}{\partial s_1}$<br>
 
-$\frac{\partial s_1}{\partial W_1} = a_0^T$<br>
+$\frac{\partial s_1}{\partial W_1} = a_0^T = x^T$<br>
 
 $\frac{\partial s_1}{\partial a_0} = W_1^T$<br>
 
