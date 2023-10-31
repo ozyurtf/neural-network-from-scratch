@@ -52,6 +52,18 @@ $\frac{\partial s_1}{\partial W_1} = a_0^T$<br>
 
 $\frac{\partial s_1}{\partial b_1} = I$<br>
 
+</details>
+
+</details>
+
+<details>
+<summary>Deriving Loss Function</summary><br>
+
+</details>
+
+<details>
+<summary>Back Propagation</summary><br>
+
 $\delta_1 = \frac{\partial C}{\partial \widetilde{y}}\frac{\partial \widetilde{y}}{s_2}$<br>
 
 $\delta_2 = \frac{\partial C}{\partial \widetilde{y}}\frac{\partial \widetilde{y}}{s_2}\frac{\partial s_2}{\partial a_1}\frac{\partial a_1}{\partial s_1} = \delta_1W_2\frac{\partial a_1}{\partial s_1}$<br>
@@ -65,18 +77,6 @@ $\frac{\partial C}{\partial b_2} = \delta_1\frac{\partial s_2}{\partial b_2} = \
 $\frac{\partial C}{\partial W_{1}} = \delta_2\frac{\partial s_1}{\partial W_{1}} = \delta_2^Ta_0^T$<br>
 
 $\frac{\partial C}{\partial b_2} = \delta_2\frac{\partial s_1}{\partial b_1} = \delta_2^T$<br>
-
-</details>
-
-</details>
-
-<details>
-<summary>Deriving Loss Function</summary><br>
-
-</details>
-
-<details>
-<summary>Back Propagation</summary><br>
 
 $W_2 = W_2 - \alpha\frac{\partial C}{\partial W_{2}}$<br>
 
