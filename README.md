@@ -44,11 +44,13 @@ $\frac{\partial s_2}{\partial W_2} = a_1^T$<br>
 
 $\frac{\partial s_2}{\partial b_2} = I$<br>
 
-$\frac{\partial s_2}{\partial a_1} = W_1$<br>
+$\frac{\partial s_2}{\partial a_1} = W_2^T$<br>
 
 $\frac{\partial a_1}{\partial s_1} = \frac{\partial g_1(s_1)}{\partial s_1}$<br>
 
 $\frac{\partial s_1}{\partial W_1} = a_0^T$<br>
+
+$\frac{\partial s_1}{\partial a_0} = W_1^T$<br>
 
 $\frac{\partial s_1}{\partial b_1} = I$<br>
 
