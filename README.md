@@ -34,15 +34,15 @@ $\frac{\partial g_i(x)}{\partial s_i}  = \frac{\partial \sigma(s_i)}{\partial s_
 
 $\frac{\partial g_i(x)}{\partial s_i}  = \frac{\partial ReLU(s_i)}{\partial s_i} = M$<br> 
 
-$\frac{\partial g_i(x)}{\partial s_i} = \frac{\partial Identity(s_i)}{\partial s_i} = I$<br>
+$\frac{\partial g_i(x)}{\partial s_i} = \frac{\partial Identity(s_i)}{\partial s_i} = I_1$<br>
         
-$\frac{\partial \widetilde{y}}{\partial a_2} = I$<br>
+$\frac{\partial \widetilde{y}}{\partial a_2} = I_2$<br>
 
 $\frac{\partial a_2}{\partial s_2} = \frac{\partial g_2(s_2)}{\partial s_2}$<br>
 
 $\frac{\partial s_2}{\partial W_2} = a_1^T$<br>
 
-$\frac{\partial s_2}{\partial b_2} = I$<br>
+$\frac{\partial s_2}{\partial b_2} = I_3$<br>
 
 $\frac{\partial s_2}{\partial a_1} = W_2^T$<br>
 
@@ -52,10 +52,9 @@ $\frac{\partial s_1}{\partial W_1} = a_0^T$<br>
 
 $\frac{\partial s_1}{\partial a_0} = W_1^T$<br>
 
-$\frac{\partial s_1}{\partial b_1} = I$<br>
+$\frac{\partial s_1}{\partial b_1} = I_4$<br>
 
-$M_{kj} = 0$, $M_{kk} = 1 \text{ if } s_{i_k} > 0$, $M_{kk} = 0 \text{ if } s_{i_k} \leq 0$<br><br>
-$I_{kj} = 0$, $I_{kk} = 1$
+$M_{kj} = 0$, $M_{kk} = 1 \text{ if } s_{i_k} > 0$, $M_{kk} = 0 \text{ if } s_{i_k} \leq 0$<br>
 
 </details>
 
