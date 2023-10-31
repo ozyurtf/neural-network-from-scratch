@@ -27,20 +27,30 @@ $g_i(x) = Identity(x) = x$<br>
 
 <details>
 <summary>Gradients</summary><br>
-        
-$\frac{\partial \widetilde{y}}{\partial a_2}$<br>
 
-$\frac{\partial a_2}{\partial s_2}$<br>
+$\frac{\partial g_i(x)}{\partial x}  = \frac{\partial tanh(x)}{\partial x} = 1 - \tanh^2(x)$<br>
+
+$\frac{\partial g_i(x)}{\partial x}  = \frac{\partial sigma(x)}{\partial x} = \sigma(x) \cdot (1 - \sigma(x))$<br>
+
+$\frac{\partial g_i(x)}{\partial x}  = \frac{\partial ReLU(x)}{\partial x} = 1$ if $x > 0$ else $0$<br>
+
+$\frac{\partial g_i(x)}{\partial x} = \frac{\partial Identity(x)}{\partial x} = I$<br>
+        
+$\frac{\partial \widetilde{y}}{\partial a_2} = I$<br>
+
+$\frac{\partial a_2}{\partial s_2} = \frac{\partial g_2(s_2)}{\partial s_2}$<br>
 
 $\frac{\partial s_2}{\partial W_2} = a_1^T$<br>
 
-$\frac{\partial s_2}{\partial a_1}$<br>
+$\frac{\partial s_2}{\partial b_2} = I$<br>
 
-$\frac{\partial a_2}{\partial s_1}$<br>
+$\frac{\partial s_2}{\partial a_1} = W_1$<br>
+
+$\frac{\partial a_1}{\partial s_1} = \frac{\partial g_1(s_1)}{\partial s_1}$<br>
 
 $\frac{\partial s_1}{\partial W_1} = a_0^T$<br>
 
-$\frac{\partial s_1}{\partial b_1}$<br>
+$\frac{\partial s_1}{\partial b_1} = I$<br>
 
 $\delta_1 = \frac{\partial C}{\partial \widetilde{y}}\frac{\partial \widetilde{y}}{s_2}$<br>
 
