@@ -65,11 +65,15 @@ $\text{BCE}(y, \hat{y}) = - \left( y \cdot \log(\hat{y}) + (1 - y) \cdot \log(1 
 
 $\text{MSE}(y, \hat{y}) = \frac{1}{n} \sum_{i=1} (y_i - \hat{y}_i)^2$
 
-
 </details>
 
 <details>
 <summary>Back Propagation</summary><br>
+
+$\frac{\partial \text{BCE}}{\partial \hat{y}} = -\left(\frac{y}{\hat{y}} - \frac{1 - y}{1 - \hat{y}}\right)$
+
+$\frac{\partial \text{MSE}}{\partial \hat{y}} = -\frac{2}{n} \sum_{i=1} (y_i - \hat{y}_i)$
+
 
 $\delta_1 = \frac{\partial C}{\partial \widetilde{y}}\frac{\partial \widetilde{y}}{s_2}$<br>
 
