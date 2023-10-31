@@ -64,7 +64,7 @@ $I_{ij} = 0$, $I_{ii} = 1$
 <details>
 <summary>Deriving Loss Function</summary><br>
 
-$\text{BCE}(y, \hat{y}) = - \left( y \cdot \log(\hat{y}) + (1 - y) \cdot \log(1 - \hat{y}) \right)$
+$\text{BCE}(y, \hat{y}) = - \frac{1}{n} \sum_{i=1} \left( y \cdot \log(\hat{y}) + (1 - y) \cdot \log(1 - \hat{y}) \right)$
 
 $\text{MSE}(y, \hat{y}) = \frac{1}{n} \sum_{i=1} (y_i - \hat{y}_i)^2$
 
